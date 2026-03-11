@@ -1,0 +1,661 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>TUGAS 3 &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tugas3';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="TUGAS 2" href="tugas2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tugas1.html"><strong>TUGAS 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas2.html"><strong>TUGAS 2</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>TUGAS 3</strong></a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftugas3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/tugas3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TUGAS 3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-awal">Data Awal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-knn">Perhitungan KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-hasil-perhitungan-knn">Tabel Hasil Perhitungan KNN</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3">
+<h1><strong>TUGAS 3</strong><a class="headerlink" href="#tugas-3" title="Permalink to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>Kolom sepal_width</p></li>
+<li><p>Baris ke-39 dihilangkan</p></li>
+<li><p>Kemudian diprediksi menggunakan KNN dari data lain</p></li>
+</ol>
+<p>Rumus yang dipakai KNN:</p>
+<p><img alt="image.png" src="data:image/png;base64,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" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_iris</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.neighbors</span><span class="w"> </span><span class="kn">import</span> <span class="n">NearestNeighbors</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="data-awal">
+<h2>Data Awal<a class="headerlink" href="#data-awal" title="Permalink to this heading">#</a></h2>
+<p>Data awal yang terdapat data kosong berada di baris 39 sepal_width</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load dataset iris</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal_length&#39;</span><span class="p">,</span><span class="s1">&#39;sepal_width&#39;</span><span class="p">,</span><span class="s1">&#39;petal_length&#39;</span><span class="p">,</span><span class="s1">&#39;petal_width&#39;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># Salin data</span>
+<span class="n">df_missing</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Hilangkan nilai sepal_width pada baris 39</span>
+<span class="n">df_missing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">39</span><span class="p">,</span><span class="s1">&#39;sepal_width&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DATA SEBELUM PERHITUNGAN&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_missing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">35</span><span class="p">:</span><span class="mi">45</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DATA SEBELUM PERHITUNGAN
+    sepal_length  sepal_width  petal_length  petal_width
+35           5.0          3.2           1.2          0.2
+36           5.5          3.5           1.3          0.2
+37           4.9          3.6           1.4          0.1
+38           4.4          3.0           1.3          0.2
+39           5.1          NaN           1.5          0.2
+40           5.0          3.5           1.3          0.3
+41           4.5          2.3           1.3          0.3
+42           4.4          3.2           1.3          0.2
+43           5.0          3.5           1.6          0.6
+44           5.1          3.8           1.9          0.4
+45           4.8          3.0           1.4          0.3
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="perhitungan-knn">
+<h2>Perhitungan KNN<a class="headerlink" href="#perhitungan-knn" title="Permalink to this heading">#</a></h2>
+<p>untuk Mencari data yang Paling dekat dengan data kosong</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ambil data yang lengkap</span>
+<span class="n">train_data</span> <span class="o">=</span> <span class="n">df_missing</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># Model KNN</span>
+<span class="n">knn</span> <span class="o">=</span> <span class="n">NearestNeighbors</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Fit model</span>
+<span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_data</span><span class="p">[[</span><span class="s1">&#39;sepal_length&#39;</span><span class="p">,</span><span class="s1">&#39;petal_length&#39;</span><span class="p">,</span><span class="s1">&#39;petal_width&#39;</span><span class="p">]])</span>
+
+<span class="c1"># Data yang kosong</span>
+<span class="n">data_missing</span> <span class="o">=</span> <span class="n">df_missing</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">39</span><span class="p">],[</span><span class="s1">&#39;sepal_length&#39;</span><span class="p">,</span><span class="s1">&#39;petal_length&#39;</span><span class="p">,</span><span class="s1">&#39;petal_width&#39;</span><span class="p">]]</span>
+
+<span class="c1"># Cari tetangga terdekat</span>
+<span class="n">distances</span><span class="p">,</span> <span class="n">indices</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">kneighbors</span><span class="p">(</span><span class="n">data_missing</span><span class="p">)</span>
+
+<span class="c1"># Ambil data tetangga</span>
+<span class="n">neighbors</span> <span class="o">=</span> <span class="n">train_data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">indices</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">DATA YANG HILANG&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_missing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">39</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">3 DATA TERDEKAT (NEIGHBORS)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">neighbors</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">JARAK KE MASING-MASING DATA&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">indices</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Index data: </span><span class="si">{</span><span class="n">train_data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="si">}</span><span class="s2">, Jarak: </span><span class="si">{</span><span class="n">distances</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DATA YANG HILANG
+sepal_length    5.1
+sepal_width     NaN
+petal_length    1.5
+petal_width     0.2
+Name: 39, dtype: float64
+
+3 DATA TERDEKAT (NEIGHBORS)
+    sepal_length  sepal_width  petal_length  petal_width
+7            5.0          3.4           1.5          0.2
+19           5.1          3.8           1.5          0.3
+0            5.1          3.5           1.4          0.2
+
+JARAK KE MASING-MASING DATA
+Index data: 7, Jarak: 0.09999999999999964
+Index data: 19, Jarak: 0.09999999999999998
+Index data: 0, Jarak: 0.10000000000000009
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="tabel-hasil-perhitungan-knn">
+<h2>Tabel Hasil Perhitungan KNN<a class="headerlink" href="#tabel-hasil-perhitungan-knn" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hitung nilai pengganti dari rata-rata tetangga</span>
+<span class="n">estimated_value</span> <span class="o">=</span> <span class="n">neighbors</span><span class="p">[</span><span class="s1">&#39;sepal_width&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="c1"># Isi nilai yang hilang</span>
+<span class="n">df_missing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">39</span><span class="p">,</span><span class="s1">&#39;sepal_width&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimated_value</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">DATA SETELAH PERHITUNGAN KNN&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_missing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">35</span><span class="p">:</span><span class="mi">45</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Nilai hasil estimasi sepal_width =&quot;</span><span class="p">,</span> <span class="n">estimated_value</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DATA SETELAH PERHITUNGAN KNN
+    sepal_length  sepal_width  petal_length  petal_width
+35           5.0     3.200000           1.2          0.2
+36           5.5     3.500000           1.3          0.2
+37           4.9     3.600000           1.4          0.1
+38           4.4     3.000000           1.3          0.2
+39           5.1     3.566667           1.5          0.2
+40           5.0     3.500000           1.3          0.3
+41           4.5     2.300000           1.3          0.3
+42           4.4     3.200000           1.3          0.2
+43           5.0     3.500000           1.6          0.6
+44           5.1     3.800000           1.9          0.4
+45           4.8     3.000000           1.4          0.3
+
+Nilai hasil estimasi sepal_width = 3.5666666666666664
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="tugas2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>TUGAS 2</strong></p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-awal">Data Awal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-knn">Perhitungan KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-hasil-perhitungan-knn">Tabel Hasil Perhitungan KNN</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

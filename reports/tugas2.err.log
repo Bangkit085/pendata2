@@ -44,7 +44,7 @@ print("Jarak Manhattan:", jarak_manhattan)
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-[0;32m/tmp/ipykernel_1732/2276884824.py[0m in [0;36m<cell line: 0>[0;34m()[0m
+[0;32m/tmp/ipykernel_7815/2276884824.py[0m in [0;36m<cell line: 0>[0;34m()[0m
 [1;32m      3[0m [0;34m[0m[0m
 [1;32m      4[0m [0;31m# membaca dataset[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 5[0;31m [0mdf[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_csv[0m[0;34m([0m[0;34m'iris.csv'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
